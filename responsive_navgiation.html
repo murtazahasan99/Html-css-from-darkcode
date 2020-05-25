@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background: #f1f1f1;
+
+        }
+        .top{
+            width: 100%;
+            background: #313131;
+            overflow: hidden;
+        }
+        .cen{
+            max-width: 1200px;
+            margin: auto;
+
+        }
+        .top ul{
+            margin: 0;
+            padding: 0;
+            float: left;
+        }
+        .top ul li{
+            list-style: none;
+            display: inline-block;
+        }
+        .top ul li a{
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            display: block;
+            font-size: 18px;
+            transition: 0.4s all;
+        }
+        .top ul li a:hover{
+            opacity: 0.8;
+        }
+        .ser{
+            margin: 10px;
+            padding: 0;
+            float: right;
+            
+
+        }
+        .ser h3{
+            float: left;
+            margin: 0;
+            padding: 0;
+            opacity: 0.3;
+        }
+
+        @media(max-width: 557px){
+            .top ul li{
+                display: block;
+            } 
+            .top ul li a{
+                text-align: center;
+    
+            }
+            .ser{
+                float: none;
+                text-align: center;
+    
+            }
+            .ser h3 {
+              float: none;
+
+            }
+  
+            .top ul{
+                margin: 0;
+                padding: 0;
+                float: none;
+            }
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="cen">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Works</a></li>
+                <li><a href="#">Concat</a></li>
+            </ul>
+            <div class="ser"><h3>search: </h3> <input type="text"></div>
+            
+        </div>
+    </div>
+</body>
+</html>

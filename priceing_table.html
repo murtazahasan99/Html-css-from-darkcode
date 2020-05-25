@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+
+        }
+        .price_table{
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+        .col{
+            flex:25%;
+            max-width: 320px;
+            padding: 10px;
+            box-sizing: border-box;
+
+        }
+        .table{
+            background: #f1f1f1;
+            padding: 40px 20px;
+            font-family: "montserrat" ,sans-serif;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 10px #00000070;
+
+        }
+        .table h1{
+            text-transform: uppercase;
+        }
+        .table ul{
+            margin: 0;
+            padding: 0;
+
+        }
+        .table ul li{
+            padding:  10px 0;
+            list-style: none;
+        }
+        .price{
+            font-size: 40px;
+            padding-bottom: 20px;
+        }
+        .price span{
+            display: block;
+            font-size: 14px;
+
+        }
+        .table a{
+            text-decoration: none;
+            display: block;
+            color: #2c3e50;
+            border: solid #2c3e50;
+            padding: 10px 0;
+            margin: 10px 0;
+            text-transform: uppercase;
+            border-radius: 40px; 
+            font-size: 14px;
+            transition: 0.5 linear;
+
+        }
+        .table a:hover{
+            background: #2c3e50;
+            color: #fff;
+
+
+        }
+        .pop{
+            background: #2c3e50;
+            color: #fff;
+            padding: 10px 40px;
+            transform: rotate(45deg);
+            position: absolute;
+            top: 15px;
+            right: -20px;
+
+        }
+        @media(max-width: 980px){
+            .col{
+                
+                flex: 50%;
+            }
+        }
+        @media(max-width: 700px){
+            .col{
+                flex: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="price_table">
+        <div class="col">
+            <div class="table">
+                <h1>regular</h1>
+                <div class="price">
+                    25$ 
+                    <span>pre month</span>
+                </div>
+                <ul>
+                    <li>2 <strong>Website</strong></li>
+                    <li>10 <strong>Emails</strong></li>
+                    <li>100 GB <strong>Storage</strong></li>
+                    <li>1 <strong>Acount</strong></li>
+                </ul>
+                <a href="#">Buy Now</a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="table">
+                <h1>regular</h1>
+                <div class="price">
+                    25$ 
+                    <span>pre month</span>
+                </div>
+                <ul>
+                    <li>2 <strong>Website</strong></li>
+                    <li>10 <strong>Emails</strong></li>
+                    <li>100 GB <strong>Storage</strong></li>
+                    <li>1 <strong>Acount</strong></li>
+                </ul>
+                <a href="#">Buy Now</a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="table">
+                <h1>regular</h1>
+                <div class="pop">  Free  </div>
+                <div class="price">
+                    25$ 
+                    <span>pre month</span>
+                </div>
+                <ul>
+                    <li>2 <strong>Website</strong></li>
+                    <li>10 <strong>Emails</strong></li>
+                    <li>100 GB <strong>Storage</strong></li>
+                    <li>1 <strong>Acount</strong></li>
+                </ul>
+                <a href="#">Buy Now</a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="table">
+                <h1>regular</h1>
+                <div class="price">
+                    25$ 
+                    <span>pre month</span>
+                </div>
+                <ul>
+                    <li>2 <strong>Website</strong></li>
+                    <li>10 <strong>Emails</strong></li>
+                    <li>100 GB <strong>Storage</strong></li>
+                    <li>1 <strong>Acount</strong></li>
+                </ul>
+                <a href="#">Buy Now</a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
