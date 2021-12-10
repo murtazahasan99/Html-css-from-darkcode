@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("image-asset.jpeg");
+    background-repeat:no-repeat;
+    background-size: cover;
+  }
+  .temp{
+      width: 100%;
+      height: 40%;
+      text-align: center;
+      padding-top: 40px;
+      color: rgb(243, 240, 240);
+  }
+  .sunMoon{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .col{
+    flex:25%;
+    max-width: 320px;
+    padding: 10px;
+    box-sizing: border-box;
+    
+
+}
+  .state{
+
+    border-radius: 10px;
+    background: #e7dfd5;
+    padding: 40px 20px;
+    margin: 15px;
+    font-family: "montserrat" ,sans-serif;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px #00000070;
+    
+  }
+  .table h1{
+    text-transform: uppercase;
+  }
+  img{
+      border-radius: 10px;
+  }
+  .contaner{
+    max-width: 1200px;
+    margin: auto;
+    padding: 18%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }.in{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid #e7dfd5; 
+  }
+  .search input{
+    border: none;
+    outline: none;
+    background: none;
+    color: black;
+    font-size: 22px;
+    width: 100%;
+    float: left;
+    margin: 0 10px;
+  }
+  .search button{
+    width: 100%;
+    background: none;
+    border: 2px solid #e7dfd5;
+    color: #e7dfd5;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 12px 0;
+    border-radius: 10px;
+      
+  }
+  .search ::placeholder{
+      color:rgb(143, 121, 121) ;
+  }
+  .search button:hover{
+    background:#e7dfd5 ;
+    color: black;
+
+  }  

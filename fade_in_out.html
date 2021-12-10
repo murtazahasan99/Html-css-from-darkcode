@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade in out</title>
+    <style>
+        #target {
+            height: 100px;
+            background-color: red;
+        }
+        #target2 {
+            opacity: 0;
+            height: 100px;
+            background-color: rgb(29, 27, 27);
+        }
+    </style>
+</head>
+<body>
+    <div id="target">Click to fade</div>
+    <div id="target2">Click to fadein</div>
+
+
+    <script>
+        function fadeOutEffect() {
+            var fadeTarget = document.getElementById("target");
+            var fadeEffect = setInterval(function () {
+                if (!fadeTarget.style.opacity) {
+                    fadeTarget.style.opacity = 1;
+                }
+                if (fadeTarget.style.opacity > 0) {
+                    fadeTarget.style.opacity -= 0.05;
+                } else {
+                    clearInterval(fadeEffect);
+                }
+            }, 200);
+        }
+        
+        function fadeInEffect() {
+            var fadeTarget = document.getElementById("target2");
+            var fadeEffect = setInterval(function () {
+
+                if (!fadeTarget.style.opacity) {
+                    console.log(1)
+                    fadeTarget.style.opacity =0.01;
+                }
+                if (fadeTarget.style.opacity < 1) {
+                    fadeTarget.style.opacity = 0.1 + (+fadeTarget.style.opacity)
+                } else {
+                    clearInterval(fadeEffect);
+                }
+            }, 200);
+        }
+        document.getElementById("target").addEventListener('click', fadeInEffect);
+        document.getElementById("target2").addEventListener('click', fadeOutEffect);
+
+    </script>
+</body>
+</html>
